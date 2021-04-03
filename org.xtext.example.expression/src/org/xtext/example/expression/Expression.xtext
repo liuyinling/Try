@@ -22,9 +22,6 @@ Expression:
 	Atomic ({Plus.left=current} '+' right=Expression)?
 ;
 
-Expression1:
-	Atomic ({Plus.left=current} '+' right=Expression)?
-;
 	
 Atomic returns Expression:
 	{IntConstant} value=INT |
